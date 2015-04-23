@@ -23,7 +23,7 @@ def is_codon_correct(input_codon):
     """Function to check for correctness of input codons. It checks
     if bases belong to one of the allowed DNA bases.
     
-    :param input_codon: It is expected to be a three base condon.
+    :param input_codon: It is expected to be a three base codon.
     :return: True or False
     
     >>> from pydna import seq_utils
