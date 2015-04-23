@@ -20,6 +20,20 @@ def complement_codon(input_codon):
 
 
 def is_codon_correct(input_codon):
+    """Function to check for correctness of input codons. It checks
+    if bases belong to one of the allowed DNA bases.
+    
+    :param input_codon: It is expected to be a three base condon.
+    :return: True or False
+    
+    >>> from pydna import seq_utils
+    >>> input_codon = 'ATC'
+    >>> seq_utils.is_codon_correct(input_codon)
+    True
+    """
+    if type(input_codon) == float:
+        return False
+		
     allowed_bases = ['A', 'T', 'C', 'G', 'N', '?', '-']
 
     for base in input_codon:
