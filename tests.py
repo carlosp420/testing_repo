@@ -1,6 +1,6 @@
 import unittest
 
-import seq_utils
+from pydna import seq_utils
 
 
 class TestSeqUtils(unittest.TestCase):
